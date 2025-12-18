@@ -1,20 +1,17 @@
+scripts/clear_db.py
+
 
 .env
+.venv/
+env/
 
-
-scripts/clear_db.py
-scripts/db_insert.py
-scripts/init_db.py
-
-# --- Python Junk ---
-__pycache__/
-*.py[cod]
-
-# --- Database Files ---
-
+invoices.db
 *.db-shm
 *.db-wal
 
-# --- OS Junk ---
+
+__pycache__/
+*.py[cod]
+
 .DS_Store
 Thumbs.db

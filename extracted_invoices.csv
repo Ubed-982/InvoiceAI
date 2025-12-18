@@ -1,7 +1,0 @@
-Invoice_ID,Vendor,Amount,Issue_Date,Due_Date,Items,Store_Location,Status,Recommended_Action
-MKT-9922,Insight Marketing Agency,3500.0,2025-11-01,2025-11-10,"['SEO Audit Service', 'Social Media Campaign']","Dubai, UAE",Pending,Schedule for Payment
-LOG-5541,FastTrack Logistics,470.5,2025-12-05,2025-12-20,"['Freight Charges - Dubai to Sharjah', 'Packaging Materials']","123 Business Rd, Dubai, UAE",Overdue,Urgent: Contact Vendor & Pay
-INV-2024-001,Alpha Tech Solutions,5450.0,2025-10-15,2025-10-30,"['Laptop Dell XPS', 'Wireless Mouse', 'Monitor 27-inch']","123 Business Rd, Dubai, UAE",Paid,Archive
-CONS-9901,BuildRight Construction,9500.0,2025-10-01,2025-10-15,"['Office Renovation - Phase 1 Materials', 'Labor Charges (5 Workers)']","Dubai Silicon Oasis, UAE",Pending,Schedule for Payment
-SUP-8822,PaperClipz Stationery,2045.5,2025-12-10,2025-12-24,"['A4 Paper Reams (x50 boxes) - High quality white pa...', 'Black Ink Cartridges (x10) - HP Compatible', 'Whiteboard Markers set of 4 colors']",,Overdue,Urgent: Contact Vendor & Pay
-SUB-2211,CloudHost Inc,450.0,2025-11-01,2025-11-01,['Enterprise Server Hosting - Nov 2025'],"Dubai Silicon Oasis, UAE",Paid,Archive

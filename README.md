@@ -1,120 +1,132 @@
-# 🤖 InvoiceAI — Automated Financial Intelligence Pipeline
 
-> **From PDF chaos to structured financial insights in seconds.**  
-> An AI-powered ETL pipeline that reduces manual invoice processing time by **~95%** and enables real-time spend visibility.
+# 🤖 InvoiceAI — AI-Powered Invoice Intelligence Platform
 
-![Status](https://img.shields.io/badge/Status-Live_Beta-success)
-![Stack](https://img.shields.io/badge/Stack-Python_%7C_Streamlit_%7C_SQL-blue)
-![AI](https://img.shields.io/badge/AI-Gemini_%7C_Longcat-purple)
-![License](https://img.shields.io/badge/License-MIT-green)
+Convert raw invoices into **real-time spend visibility, overdue risk alerts, and payment prioritization** — without manual processing.
 
----
-
-## 💼 Business Problem
-
-Invoice processing remains a major operational bottleneck for SMEs and finance teams:
-
-- **Time-intensive:** Processing a single invoice manually takes **10–15 minutes**
-- **Error-prone:** Manual data entry has an estimated **12–15% error rate**
-- **Low visibility:** Financial data remains locked inside unstructured PDF documents
-- **Delayed decisions:** No real-time view of spend, liabilities, or overdue risk
-
-This leads to delayed payments, compliance risk, and poor cash-flow planning.
+![Status](https://img.shields.io/badge/Status-v1.0_MVP-success?style=for-the-badge)
+![Market](https://img.shields.io/badge/Region-UAE_%2F_MENA-blue?style=for-the-badge)
+![Tech](https://img.shields.io/badge/Stack-Python_%7C_Streamlit_%7C_Gemini_AI-purple?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 ---
 
-## 💡 Solution Overview
+## 🎯 Project Context — Built for UAE SMEs
 
-**InvoiceAI** is an end-to-end **AI-driven financial intelligence system** that transforms raw PDF invoices into structured, actionable insights.
+InvoiceAI was designed to solve a real operational gap faced by small and mid-sized businesses across the UAE and MENA region.
 
-The system automates the entire workflow:
+Many finance teams still rely on manual invoice handling despite:
+- VAT compliance requirements (5%)
+- Multi-vendor invoice formats (English / Arabic)
+- High invoice volumes with limited finance staff
 
-1. Ingest invoices
+This results in:
+- 10–15 minutes lost per invoice
+- Late payments and missed discounts
+- No real-time visibility into liabilities or cash flow
+- Critical data trapped inside PDFs
+
+InvoiceAI acts as a **Financial Command Center**, bridging the gap between raw invoices and informed financial decisions.
+
+---
+
+## 💡 What InvoiceAI Does
+
+InvoiceAI is an **end-to-end AI-driven invoice processing and analytics system** that transforms unstructured PDFs into structured, actionable intelligence.
+
+### 🔄 End-to-End Workflow
+
+1. Ingest PDF invoices (batch supported)
 2. Extract structured data using LLMs
-3. Apply business rules
-4. Persist results
-5. Visualize insights in an executive dashboard
+3. Apply business rules and risk logic
+4. Persist normalized data
+5. Visualize insights in a real-time dashboard
 
 ---
 
-## 🔄 Core Capabilities
+## 🚀 Key Features (v1.0 MVP)
 
-### 📥 Invoice Ingestion
+### ⚡ AI-Powered Batch Processing
+- Process 50+ invoices simultaneously
+- Template-agnostic extraction across layouts
+- Built-in validation to reduce extraction errors
 
-- Automatically detects digital PDF invoices from a designated directory
-- Designed for batch processing at scale
-
-### 🧠 AI-Powered Extraction
-
-- Uses **Google Gemini 2.0** and **Longcat-560B (MoE)** for robust parsing
-- Handles inconsistent layouts without rigid templates
-- Outputs clean, structured JSON
-
-### ⚡ Smart Action Engine
-
-Applies business logic to every invoice:
-
-- Flags **overdue payments**
-- Identifies **high-value invoices**
-- Assigns action labels such as:
-  - `Urgent: Pay Immediately`
-  - `Requires Manager Approval`
-  - `Routine Payment`
-
-### 🗄️ Data Persistence
-
-- Stores normalized invoice data in **SQLite**
-- Enables historical analysis, auditing, and reporting
+### 🔥 Smart Action Queue
+Invoices are automatically prioritized:
+- Urgent: Overdue or high-value invoices
+- Routine: Standard recurring payments
+- Paid: Automatically archived
 
 ### 📊 Executive Dashboard
+Power BI–inspired Streamlit interface:
+- Spend KPIs and liability overview
+- Overdue risk alerts
+- Vendor-level analytics
+- Exportable invoice ledger
 
-- Power BI–inspired Streamlit interface
-- Real-time KPIs, vendor analysis, and risk indicators
-- Designed for finance managers and operations teams
+### 🧠 Business-Aware Intelligence
+Each invoice is enriched with:
+- Risk classification
+- Recommended next action
+- Payment priority context
 
 ---
 
-## 📸 Dashboard Preview
+## 🎥 Product Walkthrough
 
-> ![Dashboard screenshot 1](assets/image.png) > ![Dashboard screenshot 2](assets/image-1.png) > ![Dashboard screenshot 3](assets/image-2.png)
+A quick visual overview of how **InvoiceAI** transforms raw invoices into actionable financial intelligence.
 
-### 🎬 Video Preview
+---
 
-Watch a short walkthrough of InvoiceAI in action.
+### 📊 Dashboard Overview
+*Real-time visibility into spend, liabilities, and invoice status.*
 
-- Full demo (recorded video):  
-  <video controls width="720">
-    <source src="./assets/preview.mp4" type="video/mp4">
-    Your browser does not support the video tag. You can download/watch it here: [Recording 2025-12-16 184959.mp4](./assets/preview.mp4)
-  </video>
-
-> 💡 Tip: Host the GIF in the repo under `assets/` or use a CDN/GitHub Pages for faster loading.
-
-### Executive Overview
-
-- Total spend
-- Invoice volume
-- Average invoice value
-- Overdue alerts
+![InvoiceAI Dashboard – Overview](assets/image.png)
+![InvoiceAI Dashboard – KPIs](assets/image-1.png)
+![InvoiceAI Dashboard – KPIs](assets/image-2.png)
+---
 
 ### ⚡ Smart Action Center
+*LLM-driven prioritization of invoices based on urgency, value, and due dates.*
 
-- Critical issues highlighted in red
-- Routine tasks grouped for operational clarity
+![InvoiceAI Action Center – Priority Queue](assets/image-3.png)
+![InvoiceAI Action Center – Invoice Details](assets/image-4.png)
 
 ---
+
+### 🎬 Live Demos
+
+**End-to-End Invoice Processing**
+> From raw PDF ingestion to structured data and dashboard updates.
+
+![InvoiceAI Dashboard Demo](assets/1.gif)
+
+**AI-Powered Action Recommendations**
+> How the system reasons over invoices and suggests next actions.
+
+![InvoiceAI Action Center Demo](assets/2.gif)
+
 
 ## 🏗️ Technical Architecture
 
 ```mermaid
 graph LR
-    A[PDF Invoice] -->|Ingestion| B[Python ETL Pipeline]
+    A[PDF Invoices] -->|Ingestion| B[Python ETL Pipeline]
     B -->|Text Parsing| C[LLM Client]
-    C -->|API Call| D[Gemini / Longcat]
-    D -->|Structured JSON| E[Business Logic Engine]
-    E -->|Persist| F[(SQLite Database)]
+    C -->|Gemini / Longcat| D[Structured JSON]
+    D -->|Business Rules| E[Action Engine]
+    E -->|Persist| F[(SQLite / Database)]
     F -->|Query| G[Streamlit Dashboard]
 ```
+
+---
+
+## 🧠 Key Design Decisions
+
+- Multi-model AI architecture to reduce vendor lock-in
+- Template-free parsing for layout flexibility
+- Action-oriented enrichment for finance teams
+- Resilient ETL with retry and backoff
+- Enterprise dashboard design principles
 
 ---
 
@@ -131,59 +143,24 @@ streamlit run scripts/dashboard.py
 
 ---
 
-## 🧠 Key Design Decisions
+## 🗺️ Roadmap (v2.0)
 
-### 🔁 Multi-Model AI Architecture
-
-The extraction layer is designed to support multiple LLM providers. Models can be swapped (Gemini for speed, Longcat for long-context accuracy) without changes to downstream logic, reducing vendor lock-in risk.
-
-### 🧩 Template-Free Parsing
-
-Invoices are parsed using semantic understanding rather than rigid templates, allowing the system to handle diverse vendor layouts and formats.
-
-### ⚡ Row-Level Intelligence
-
-Each invoice is enriched with contextual metadata such as risk level and recommended action (e.g., _Urgent Payment_, _Manager Approval_), enabling operational decision-making rather than raw data display.
-
-### 🛡️ Resilient ETL Pipeline
-
-The extraction pipeline implements retry logic and exponential backoff to handle transient API failures and rate limits gracefully.
-
-### 📊 Enterprise Dashboard Design
-
-The Streamlit UI follows Power BI–inspired design principles:
-
-- KPI-first layout
-- High-contrast alerts for risk visibility
-- Clean, executive-friendly typography and spacing
-
-### 🗄️ Lightweight but Auditable Storage
-
-SQLite is used for simplicity and portability while still supporting historical analysis, traceability, and audit requirements.
+- WhatsApp / Telegram invoice ingestion
+- Vision OCR for scanned documents
+- Email inbox monitoring
+- Dockerized Azure deployment
+- PostgreSQL support
 
 ---
 
-## 📍 Roadmap (v2.0)
+## 👤 About the Author
 
-The current MVP focuses on high-accuracy digital PDF extraction. Future planned updates include:
+**Ubed Ullah**  
+Data Scientist & AI Automation Engineer
 
-- Telegram Bot Integration: Upload invoices directly via chat using n8n webhooks.
-
-- Vision OCR: Integration with pdf2image and GPT-4o Vision to support scanned paper receipts.
-
-- Email Scraper: Auto-fetch invoices from a dedicated accounts@ email address.
-
-- Docker Support: Full containerization for cloud deployment on Azure.
+🔗 LinkedIn: https://www.linkedin.com/in/ubedullah/  
+💻 GitHub: https://github.com/Ubed-982
 
 ---
 
-## 📬 Contact
-
-Ubed Ullah
-Data Scientist
-[\[LinkedIn Profile\]](https://www.linkedin.com/in/ubedullah/)
-[\[Github\]](https://github.com/Ubed-982)
-
-```
-
-
+> InvoiceAI is a portfolio-grade project showcasing production-ready AI automation, data engineering, and financial analytics.
